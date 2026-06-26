@@ -1,0 +1,15 @@
+def getWords(text, k):
+    words = text.split()
+    result = []
+
+    for word in words:
+        if words.count(word) >= k and word not in result:
+            result.append(word)
+
+    return result
+
+
+text = "a mouse is smaller than a dog but a dog is stronger"
+k = 2
+
+print(getWords(text, k))
