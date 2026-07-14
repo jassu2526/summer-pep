@@ -1,0 +1,20 @@
+# #WAP to take  2 integers from user and devide then
+
+# num1 = int(input("Enter a number: "))
+# num2 = int(input("Enter another number: "))
+
+# result = num1 / num2 
+# print(result)
+
+
+# to handle error in python , we do exception handing using try and except block
+try:
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter another number: "))
+
+    result = num1 / num2 
+    print(result)
+except ZeroDivisionError:
+    print("Denominator cannot be 0!1!")
+except ValueError:
+    print("only integers are allowed as input")

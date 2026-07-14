@@ -1,0 +1,7 @@
+# Creating a file
+fh = open("file1.txt", "xt")
+fh.write("Hello")
+fh.close()
+
+# Overwriting the file
+fh = open("file1.txt", "wt")
